@@ -13,4 +13,11 @@ This project uses [SignalR core client](https://github.com/mandrewcito/signalrco
 Quix APIs are secured using OAuth2.0 bearer tokens. Dashboard must use a Quix a personal access token (PAT) to read data from Quix.
 
  1. Login to [Quix](https://portal.platform.quix.ai/workspaces).
- 2. 
+ 2. Click on the profile icon in the top right corner and click on "Tokens" to navigate to PAT tab.
+    ![Quix token menu](images/quix_token_menu.png)
+ 3. Click on the "Generate Token" button to open the dialog to create a new PAT.
+    ![Generate new token button](images/quix_generate_token_btn.png)
+ 4. Enter a name for your PAT and an expiration date, and click on the "Create" button to generate the PAT.
+    ![New token dialog](images/quix_new_pat_dialog.png)
+ 5. Copy the PAT displayed in the proceeding dialog and paste it into the `your_token` placeholder in the src/main.py file in this project.
+    ![Copy PAT dialog](images/quix_copy_token_dialog.png)
