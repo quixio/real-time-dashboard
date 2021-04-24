@@ -109,5 +109,4 @@ def cb_render(value):
 
 
 if __name__ == '__main__':
-    # It is important to set port 80 to host this dashboard in Quix
     app.run_server(debug=True, host="0.0.0.0", port=8080)
