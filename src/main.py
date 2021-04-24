@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # Run this app with `python app.py` and
-# visit http://127.0.0.1:8050/ in your web browser.
+# visit http://127.0.0.1:8080/ in your web browser.
 
 import dash
 import dash_core_components as dcc
@@ -110,4 +110,4 @@ def cb_render(value):
 
 if __name__ == '__main__':
     # It is important to set port 80 to host this dashboard in Quix
-    app.run_server(debug=True, host="0.0.0.0", port=80)
+    app.run_server(debug=True, host="0.0.0.0", port=8080)
