@@ -1,6 +1,6 @@
 # Real-time dashboard using Flask
 
-This example shows how to create a dashboard using Python [Flask](https://flask.palletsprojects.com/en/1.1.x/) framework that streams data from Quix and makes live updates to the dashboard, and deploy the application to the public domain using Quix.
+This example shows how to create a client-side dashboard using Python [Flask](https://flask.palletsprojects.com/en/1.1.x/) framework that streams data from Quix and makes live updates to the dashboard, and deploy the application to the public domain using Quix.
 
 ## Setup
 
@@ -21,3 +21,12 @@ Quix APIs are secured using OAuth2.0 bearer tokens. Dashboard must use a Quix a 
     ![New token dialog](images/quix_new_pat_dialog.png)
  5. Copy the PAT displayed in the proceeding dialog and paste it into the `your_token` placeholder in the src/main.py file in this project.
     ![Copy PAT dialog](images/quix_copy_token_dialog.png)
+    
+## Debug the application in local environment
+
+After obtaining a PAT for dashboard, you can test and debug the application in a local environment.
+
+ 1. Navigate to the src directory and install the required dependencies (from requirements.txt file) using the following command.
+    ```
+    pip install -r requirements.txt
+    ```
