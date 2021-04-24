@@ -1,4 +1,3 @@
-quixstreaming==0.2.2a202102010039
 dash==1.19.0
 requests
 signalrcore
