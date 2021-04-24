@@ -31,3 +31,4 @@ After obtaining a PAT for dashboard, you can test and debug the application in a
  3. Copy the stream id of the live stream from Quix portal.
     ![Quix data catalog](images/quix_live_stream.png)
  4. Navigate to http://localhost:8080 in your web browser and enter the stream id from the previous step and you will start to see some data in the graph.
+    ![Dashboard debug view](images/flask_dashboard_debug.png)
