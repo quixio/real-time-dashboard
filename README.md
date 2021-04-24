@@ -30,4 +30,4 @@ After obtaining a PAT for dashboard, you can test and debug the application in a
  2. Make sure that there is live data in the Quix stream and run the dashboard application using `python main.py`.
  3. Copy the stream id of the live stream from Quix portal.
     ![Quix data catalog](images/quix_live_stream.png)
- 5. Navigate to http://localhost:8080 in your web browser and enter the unique id of the stream that has live data and you will start to see some data in the graph.
+ 4. Navigate to http://localhost:8080 in your web browser and enter the stream id from the previous step and you will start to see some data in the graph.
