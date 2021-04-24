@@ -21,11 +21,11 @@ from dash.dependencies import Input, Output, State
 import plotly
 
 streamId = ""
-token = "your_token"
-server_url = "wss://reader-quix-your_project_name.platform.quix.ai/hub"
+token = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qVTBRVE01TmtJNVJqSTNOVEpFUlVSRFF6WXdRVFF4TjBSRk56SkNNekpFUWpBNFFqazBSUSJ9.eyJodHRwczovL3F1aXguYWkvb3JnX2lkIjoicXVpeCIsImh0dHBzOi8vcXVpeC5haS9vd25lcl9pZCI6ImF1dGgwfGI3YjI1ZGJkLWRjN2QtNGFkZC05MmQ4LTM4OTI0Mjc3NTJiNyIsImh0dHBzOi8vcXVpeC5haS90b2tlbl9pZCI6ImY2ZmY5NzY2LTE0ODctNDU1OC04ZWU4LWQ3NDFlYmRhMzFmMCIsImh0dHBzOi8vcXVpeC5haS9leHAiOiIxNjE5NzEyMDAwIiwiaHR0cHM6Ly9xdWl4LmFpL3JvbGVzIjoiYWRtaW4iLCJpc3MiOiJodHRwczovL2xvZ2ljYWwtcGxhdGZvcm0uZXUuYXV0aDAuY29tLyIsInN1YiI6InFyY2F2RmJMNkw4bXJ0b1JjMFZucXFhR2lxWXM5VENLQGNsaWVudHMiLCJhdWQiOiJxdWl4IiwiaWF0IjoxNjE5MzA4MjM0LCJleHAiOjE2MjE5MDAyMzQsImF6cCI6InFyY2F2RmJMNkw4bXJ0b1JjMFZucXFhR2lxWXM5VENLIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIiwicGVybWlzc2lvbnMiOltdfQ.GgBQPuOJOB9HO4syqIkCUudCPkAUHWjJfB-PEvaga8YiZevBQf3N1-YlnFy-rPvQ6ANIxbMWI8k2qCoPOb9hbxKWSe9CenxBiQJJV338bmWW2AEfhuQPCvoT8J8yHfTatoTX_Y-jkJ0jVPKaHyNrgYUQyxYnWxI9EftFRHZiGknt4WJes51rfThuJVHnwf09lHWGoQkY37Fb_tqBVUubnq8lavIMSRMrJN-buI7wwfv_Yz5E-iM4UoLJsPYhkdgkvmv_uYpwfddYogvt0vk4F02Mq5LLI3o6f1kQwts9rADxMhe2ryAbhK03Eb9yY5kX8pRntQPWPE7qtgPQbHymWA"
+server_url = "wss://reader-quix-gamedemo.platform.quix.ai/hub"
 
 hub_connection = HubConnectionBuilder()\
-    .with_url(server_url, options={"access_token_factory": lambda : token,})\
+    .with_url(server_url, options={"access_token_factory": lambda : token,  })\
     .build()
 
 hub_connection.on_open(print("Connection opened."))
@@ -33,16 +33,17 @@ hub_connection.on_close(lambda: on_close_handler())
 
 def on_close_handler():
     print("Connection closed.")
-    # If the connection disconnected while a stream is running, we try to reconnect.
-    # Automatic reconnection handler of the signalr lib was causing issues, hence the manual attempt.
     if streamId:
+        print("Reconnecting...")
         hub_connection.start()
+        print("Connection restarted.")
+        print("Subscribing to stream: {}".format(streamId))
         hub_connection.send("SubscribeToParameter", ["codemasters", value, "Speed"])
-        print("Reconnected.")
+        print("Subscribed to stream: {}".format(streamId))
+
 
 speed = []
 timestamps = []
-
 def on_data(payload):
     for data in payload:
         for row in range(len(data['numericValues']['Speed'])):
@@ -65,6 +66,7 @@ fig.add_trace(
 )
 
 fig.update_yaxes(range=[0,400])
+
 
 @app.callback(Output('example-graph', 'extendData'), [Input('interval', 'n_intervals')])
 def update_data(n_intervals):
