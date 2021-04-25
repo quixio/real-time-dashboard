@@ -41,8 +41,10 @@ Now that we have a working client-side dashboard capable of live streaming data 
     ![Quix develop page](images/quix_develop.png) 
  2. Enter a project name, select "python" for language and click on "Create" button to create the project.
     ![Project create dialog](images/quix_project_dialog.png) 
- 3. After creating the project, you will be automatically redirected to the Quix code editor with integrated git version control and your newly created project will be open in it which is currently empty. We will push our flask project to Quix using git.
+ 3. After creating the project, you will be automatically redirected to the Quix code editor with integrated git version control and your newly created project will be open in it with some default project files. We will push our flask project to Quix using git.
  4. In the online code editor, click on "Clone" button to open the git credentials dialog.
     ![Git credentials dialog](images/quix_clone.png)
  5. Click on "Generate Password" in the git credentials dialog to create a git password. Take note of the git project url, username and the newly generated password as we will need them to push our project to Quix.
     ![Git generate password](images/quix_git_pwd_dialog.png)
+ 6. Clone the project using the credentials provided by running `git clone {your_git_url}` and enter the username and the password when prompted.
+ 7. Delete all the files in the "source" folder of the newly cloned project and copy the main.py and requirements.txt file from the src folder of this project and paste them into the source directory of the cloned project.
