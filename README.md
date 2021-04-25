@@ -55,3 +55,5 @@ Now that we have a working client-side dashboard capable of live streaming data 
     ![Deployment dialog](images/quix_deployment_dialog.png)
  11. Select the "Network" tab in the deployment dialog and enable public access to your dashboard by throwing the switch to ON and enter a url prefix for your site like "dashboard". This allows anyone to access the dashboard on the world wide web using a url like https://{your_prefix}-{your_organisation}-{your_workspace}.deployments.quix.ai (The exact url will be displayed in the deployment dialog when you enter the url prefix).
     ![Deployment network configuration](images/quix_deployment_network.png)
+ 12. Click on the "Deploy" button and your deployment will begin. You will be redirected to the deployments page on which you will see your deployment in progress.
+    ![Deployment list](images/quix_deployments.png)
