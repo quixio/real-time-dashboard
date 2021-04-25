@@ -1,6 +1,6 @@
 # Real-time dashboard using Flask
 
-This example shows how to create a client-side dashboard using Python [Flask](https://flask.palletsprojects.com/en/1.1.x/) framework that streams data from Quix and makes live updates to the dashboard, and deploy the application to the public domain using Quix.
+This example shows how to create a client-side dashboard using Python [Flask](https://flask.palletsprojects.com/en/1.1.x/) framework that streams data from Quix and makes live updates to the dashboard and deploy the application to the public domain using Quix.
 
 ## Setup
 
@@ -51,13 +51,13 @@ Now that we have a working client-side dashboard capable of live streaming data 
  8. Commit your changes to Quix using the usual git flow of `git add .`, `git commit -m "Add flask dashboard app."` and `git push`.
  9. Head back to the Quix portal and open the project we just pushed and click on the "Deploy" button to open the deployment dialog.
     ![Open deployment dialog](images/quix_open_deploy_dialog.png)
- 10. In the deployment dialog, make sure that the deployment type is set to "service", adjust the CPU and memory (if unsure, set CPU millicores to 450 and memory to 500MB). For testing purposes, 1 replica is sufficient, but you can add high availability to your application by increasing the replica count in a production scenario.
+ 10. In the deployment dialog, make sure that the deployment type is set to "service", adjust the CPU and memory (if unsure, set CPU milli cores to 450 and memory to 500MB). For testing purposes, 1 replica is sufficient, but you can add high availability to your application by increasing the replica count in a production scenario.
     ![Deployment dialog](images/quix_deployment_dialog.png)
  11. Select the "Network" tab in the deployment dialog and enable public access to your dashboard by throwing the switch to ON and enter a url prefix for your site like "dashboard". This allows anyone to access the dashboard on the world wide web using a url like https://{your_prefix}-{your_organisation}-{your_workspace}.deployments.quix.ai (The exact url will be displayed in the deployment dialog when you enter the url prefix).
     ![Deployment network configuration](images/quix_deployment_network.png)
  12. Click on the "Deploy" button and your deployment will begin. You will be redirected to the deployments page on which you will see your deployment in progress.
     ![Deployment list](images/quix_deployments.png)
- 13. Once your deployment is complete, you can access your dashboard using the url generated in the preceeding step.
+ 13. Once your deployment is complete, you can access your dashboard using the url generated in the preceding step.
 
 As you can see, developing and deploying applications with Quix is incredibly simple and fast even in complex high availability scenarios. All the time-consuming and unnecessarily complicated steps that traditionally involve a gazillion different commands and components like configuring DNS, TLS, load balancers, etc have been beautifully abstracted away from you to ensure that you can focus on your application while enjoying the best practices of production deployments by default.
 
