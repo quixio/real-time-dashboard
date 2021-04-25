@@ -19,13 +19,13 @@ Quix APIs are secured using OAuth2.0 bearer tokens. Dashboard must use a Quix a 
     ![Generate new token button](images/quix_generate_token_btn.png)
  4. Enter a name for your PAT and an expiration date, and click on the "Create" button to generate the PAT.
     ![New token dialog](images/quix_new_pat_dialog.png)
- 5. Copy the PAT displayed in the proceeding dialog and paste it into the `your_token` placeholder in the src/main.py file in this project.
+ 5. Take note of the PAT displayed in the dialog as we will need it in the next section.
     ![Copy PAT dialog](images/quix_copy_token_dialog.png)
     
 ## Update the placeholders in main.py
 
- 1. Set the `your_token` placeholder in the src/main.py to the PAT generated in the preceding section.
- 2. 
+ 1. Set the `your_token` placeholder in the src/main.py(line 24) to the PAT generated in the preceding section.
+ 2. Set the `your_workspace` placeholder in the src/main.py(line 25) to the name of your Quix workspace.
     
 ## Debug the application in local environment
 
