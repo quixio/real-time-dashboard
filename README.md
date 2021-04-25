@@ -43,4 +43,6 @@ Now that we have a working client-side dashboard capable of live streaming data 
     ![Project create dialog](images/quix_project_dialog.png) 
  3. After creating the project, you will be automatically redirected to the Quix code editor with integrated git version control and your newly created project will be open in it which is currently empty. We will push our flask project to Quix using git.
  4. In the online code editor, click on "Clone" button to open the git credentials dialog.
-    ![Git credentials dialog](images/quix_clong.png)
+    ![Git credentials dialog](images/quix_clone.png)
+ 5. Click on "Generate Password" in the git credentials dialog to create a git password. Take note of the git project url, username and the newly generated password as we will need them to push our project to Quix.
+    ![Git generate password](images/quix_git_pwd_dialog.png)
