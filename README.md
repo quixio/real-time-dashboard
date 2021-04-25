@@ -48,3 +48,4 @@ Now that we have a working client-side dashboard capable of live streaming data 
     ![Git generate password](images/quix_git_pwd_dialog.png)
  6. Clone the project using the credentials provided by running `git clone {your_git_url}` and enter the username and the password when prompted.
  7. Delete all the files in the "source" folder of the newly cloned project and copy the main.py and requirements.txt file from the src folder of this project and paste them into the source directory of the cloned project.
+ 8. Commit your changes to Quix using the usual git flow of `git add .`, `git commit -m "Add flask dashboard app."` and `git push`.
