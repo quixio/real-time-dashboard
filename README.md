@@ -32,3 +32,10 @@ After obtaining a PAT for dashboard, you can test and debug the application in a
     ![Quix data catalog](images/quix_live_stream.png)
  4. Navigate to http://localhost:8080 in your web browser and enter the stream id from the previous step and you will start to see some data in the graph.
     ![Dashboard debug view](images/flask_dashboard_debug.png)
+    
+## Deploy to Quix
+
+Now that we have a working client-side dashboard capable of live streaming data from Quix, we can deploy it and make it available over the world wide web.
+
+ 1. Navigate to the "Develop" tab in Quix and click on the "Create Project" button.
+    ![Quix develop page](images/quix_develop.png) 
