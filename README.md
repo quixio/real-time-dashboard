@@ -59,6 +59,6 @@ Now that we have a working client-side dashboard capable of live streaming data 
     ![Deployment list](images/quix_deployments.png)
  13. Once your deployment is complete, you can access your dashboard using the url generated in the preceeding step.
 
-As you can see, developing and deploying applications with Quix is incredibly simple and fast even in complex high availability scenarios. All the time-consuming and unnecessarily complicated steps that traditionally involve a gazillion different commands and components for configuring DNS, TLS, load balancers, etc have been beautifully abstracted away from you to ensure that you can focus on your application while enjoying the best practices of production deployments by default.
+As you can see, developing and deploying applications with Quix is incredibly simple and fast even in complex high availability scenarios. All the time-consuming and unnecessarily complicated steps that traditionally involve a gazillion different commands and components like configuring DNS, TLS, load balancers, etc have been beautifully abstracted away from you to ensure that you can focus on your application while enjoying the best practices of production deployments by default.
 
 Quix also enables you to develop your application in an environment identical to your production environment which often tends to be impractical due to cost concerns or the sheer effort it takes to configure a staging environment that is identical to your production environment.
