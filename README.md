@@ -39,3 +39,5 @@ Now that we have a working client-side dashboard capable of live streaming data 
 
  1. Navigate to the "Develop" tab in Quix and click on the "Create Project" button.
     ![Quix develop page](images/quix_develop.png) 
+ 2. Enter a project name, select "python" for language and click on "Create" button to create the project.
+    ![Project create dialog](images/quix_project_dialog.png) 
