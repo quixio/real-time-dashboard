@@ -41,3 +41,5 @@ Now that we have a working client-side dashboard capable of live streaming data 
     ![Quix develop page](images/quix_develop.png) 
  2. Enter a project name, select "python" for language and click on "Create" button to create the project.
     ![Project create dialog](images/quix_project_dialog.png) 
+ 3. After creating the project, you will be automatically redirected to the Quix code editor with integrated git version control and your newly created project will be open in it which is currently empty. We will push our flask project to Quix using git.
+ 4. 
