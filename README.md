@@ -22,6 +22,11 @@ Quix APIs are secured using OAuth2.0 bearer tokens. Dashboard must use a Quix a 
  5. Copy the PAT displayed in the proceeding dialog and paste it into the `your_token` placeholder in the src/main.py file in this project.
     ![Copy PAT dialog](images/quix_copy_token_dialog.png)
     
+## Update the placeholders in main.py
+
+ 1. Set the `your_token` placeholder in the src/main.py to the PAT generated in the preceding section.
+ 2. 
+    
 ## Debug the application in local environment
 
 After obtaining a PAT for dashboard, you can test and debug the application in a local environment.
