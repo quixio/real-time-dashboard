@@ -52,3 +52,4 @@ Now that we have a working client-side dashboard capable of live streaming data 
  9. Head back to the Quix portal and open the project we just pushed and click on the "Deploy" button to open the deployment dialog.
     ![Open deployment dialog](images/quix_open_deploy_dialog.png)
  10. In the deployment dialog, make sure that the deployment type is set to "service", adjust the CPU and memory (if unsure, set CPU millicores to 450 and memory to 500MB) and click on "Deploy" to begin deployment.
+    ![Deployment dialog](images/quix_deployment_dialog.png)
