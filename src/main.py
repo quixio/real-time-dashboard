@@ -22,7 +22,7 @@ import plotly
 
 streamId = ""
 token = "{your_token}"
-server_url = "wss://reader-quix-{your_workspace}.platform.quix.ai/hub"
+server_url = "wss://reader-{your_workspace_id}.platform.quix.ai/hub"
 
 hub_connection = HubConnectionBuilder()\
     .with_url(server_url, options={"access_token_factory": lambda : token,  })\
