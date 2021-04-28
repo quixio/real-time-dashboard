@@ -32,6 +32,7 @@ Quix APIs are secured using OAuth2.0 bearer tokens. Dashboard must use a Quix a 
 
  1. Set the `your_token` placeholder in the src/main.py(line 24) to the PAT generated in the preceding section.
  2. Set the `your_workspace_id` placeholder in the src/main.py(line 25) to your Quix workspace id obtained in the preceding step.
+ 3. Set the `your_parameter_id` placeholder in the src/main.py(line 49) to a numeric parameter from the live stream you setup in the [setup section](#Setup).
     
 ## Debug the application in local environment
 
