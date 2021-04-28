@@ -46,7 +46,7 @@ speed = []
 timestamps = []
 def on_data(payload):
     for data in payload:
-        for row in range(len(data['numericValues']['Speed'])):
+        for row in range(len(data['numericValues']['your_parameter_id'])):
             timestamps.append(str(datetime.datetime.fromtimestamp(data['timestamps'][row] / 1000000000)))
             speed.append(data['numericValues']['Speed'][row])
 
