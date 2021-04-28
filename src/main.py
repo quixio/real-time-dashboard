@@ -22,7 +22,7 @@ import plotly
 
 streamId = ""
 token = "{your_token}"
-server_url = "wss://reader-quix-{your_workspace}.platform.quix.ai/hub"
+server_url = "wss://reader-{your_workspace_id}.platform.quix.ai/hub"
 
 hub_connection = HubConnectionBuilder()\
     .with_url(server_url, options={"access_token_factory": lambda : token,  })\
@@ -46,7 +46,7 @@ speed = []
 timestamps = []
 def on_data(payload):
     for data in payload:
-        for row in range(len(data['numericValues']['Speed'])):
+        for row in range(len(data['numericValues']['your_parameter_id'])):
             timestamps.append(str(datetime.datetime.fromtimestamp(data['timestamps'][row] / 1000000000)))
             speed.append(data['numericValues']['Speed'][row])
 
