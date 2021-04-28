@@ -22,10 +22,16 @@ Quix APIs are secured using OAuth2.0 bearer tokens. Dashboard must use a Quix a 
  5. Take note of the PAT displayed in the dialog as we will need it in the next section.
     ![Copy PAT dialog](images/quix_copy_token_dialog.png)
     
+## Obtain the Quix workspace identifier
+
+ 1. Navigate to your workspace on Quix portal using a web browser.
+ 2. Take note of the url in the browser address bar which looks like https://portal.platform.quix.ai/home?workspace={your_workspace_id}&branch=master. (You may have to click on it or copy and paste it to a text editor to see the complete address).
+ 3. Your workspace id is the value of the query parameter `workspace`.
+    
 ## Update the placeholders in main.py
 
  1. Set the `your_token` placeholder in the src/main.py(line 24) to the PAT generated in the preceding section.
- 2. Set the `your_workspace` placeholder in the src/main.py(line 25) to the name of your Quix workspace.
+ 2. Set the `your_workspace` placeholder in the src/main.py(line 25) to your Quix workspace id obtained in the preceding step.
     
 ## Debug the application in local environment
 
