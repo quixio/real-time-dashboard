@@ -31,7 +31,18 @@ Quix APIs are secured using OAuth2.0 bearer tokens. Dashboard must use a Quix a 
 
 After obtaining a PAT for dashboard, you can test and debug the application in a local environment.
 
- 1. Navigate to the src directory and install the required dependencies (from requirements.txt file) using `pip install -r requirements.txt`. We recommend that you use a Python virtual environment like [venv](https://docs.python.org/3/tutorial/venv.html).
+### Install required dependencies
+We recommend that you use a Python virtual environment like [venv](https://docs.python.org/3/tutorial/venv.html).
+````
+python3 -m pip install 
+python3 -m pip install 
+python3 -m pip install 
+python3 -m pip install 
+python3 -m pip install 
+
+````
+
+ 1. Navigate to the src directory and install the required dependencies (from requirements.txt file) using `pip install -r requirements.txt`.
  2. Make sure that there is live data in the Quix stream and run the dashboard application using `python main.py`.
  3. Copy the stream id of the live stream from Quix portal.
     ![Quix data catalog](images/quix_live_stream.png)
