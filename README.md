@@ -34,12 +34,10 @@ After obtaining a PAT for dashboard, you can test and debug the application in a
 ### Install required dependencies
 We recommend that you use a Python virtual environment like [venv](https://docs.python.org/3/tutorial/venv.html).
 ````
-python3 -m pip install 
-python3 -m pip install 
-python3 -m pip install 
-python3 -m pip install 
-python3 -m pip install 
-
+python3 -m pip install dash
+python3 -m pip install signalrcore
+python3 -m pip install websocket
+python3 -m pip install requests
 ````
 
  1. Navigate to the src directory and install the required dependencies (from requirements.txt file) using `pip install -r requirements.txt`.
