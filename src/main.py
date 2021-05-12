@@ -38,7 +38,7 @@ def on_close_handler():
         hub_connection.start()
         print("Connection restarted.")
         print("Subscribing to stream: {}".format(streamId))
-        hub_connection.send("SubscribeToParameter", ["codemasters", value, "Speed"])
+        hub_connection.send("SubscribeToParameter", ["codemasters", streamId, "Speed"])
         print("Subscribed to stream: {}".format(streamId))
 
 
