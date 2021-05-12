@@ -21,7 +21,8 @@ from dash.dependencies import Input, Output, State
 import plotly
 
 streamId = ""
-token = "{your_token}"
+token = "{placeholder:token}"
+topic_name = "{placeholder:topicName}"
 server_url = "wss://reader-quix-{your_workspace}.platform.quix.ai/hub"
 
 hub_connection = HubConnectionBuilder()\
