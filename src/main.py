@@ -108,7 +108,7 @@ app.layout = html.Div(children=[
 def cb_render(value):
     global streamId
     streamId = value
-    hub_connection.send("SubscribeToParameter", ["{placeholder:topicName}", value, "Speed"])
+    hub_connection.send("SubscribeToParameter", [topic_name, value, "Speed"])
 
 
 if __name__ == '__main__':
