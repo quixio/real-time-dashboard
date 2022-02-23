@@ -2,3 +2,4 @@ dash==1.19.0
 requests
 signalrcore
 websocket-client==0.54.0
+pandas
